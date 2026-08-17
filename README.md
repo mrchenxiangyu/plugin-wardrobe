@@ -33,9 +33,11 @@
 | 穿/脱 | 「把 cindy 脱掉（卸载）」/「把 cindy 穿回来」 |
 | 登记新插件 | 「登记一个新插件：仓库 xxx，包名 yyy」 |
 
-## 插件「衣帽间兼容」规范（写给插件作者）
+## 插件「衣帽间兼容」规范
 
-要让任意插件被本技能统一管理，插件应满足：
+详细规范见 **`SPEC.md`**（目录布局、package.json 要求、安装脚本规范、版本号 semver 映射、CHANGELOG 约定、发布自检清单、更新四连校验）。
+
+要让任意插件被本技能统一管理，插件应满足（速览）：
 
 1. `package.json` 有语义化 `version`；源码含 `lib/`（host + client bundle）
 2. 提供幂等安装脚本 `install-*.ps1`（复制 package.json + lib 到 profile node_modules，并处理 `cordis.patch.yml` 挂载行；重装必须先删目标包目录避免 `lib\lib` 嵌套）
