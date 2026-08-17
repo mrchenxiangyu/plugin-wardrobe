@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    {
+      "id": "cindy",
+      "packageName": "@mrchenxiangyu/cindy-taskman",
+      "repo": "D:\\deepseek_workspace\\cindy-taskman",
+      "repoUrl": "https://github.com/mrchenxiangyu/cindy-taskman.git",
+      "installScript": "install-cindy.ps1",
+      "patchId": "cindy",
+      "sourceLib": "lib",
+      "installedVersion": "0.2.1"
+    }
+  ]
+}
